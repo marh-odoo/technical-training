@@ -41,4 +41,15 @@
         </field>
     </record>
 
+    <record id="test_movel_view_tree" model="ir.ui.view">
+        <field name="name">test_movel.view.tree</field>
+        <field name="model">test_movel</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+                <field name="partner_id"/>
+            </tree>
+        </field>
+    </record>
+
 </odoo>
