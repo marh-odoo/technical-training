@@ -1,2 +1,4 @@
-from . import new_model
-from . import new_prop
+from . import estate_property
+from . import estate_property_type
+from . import estate_property_tag
+from . import estate_property_offer
