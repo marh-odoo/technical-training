@@ -5,6 +5,8 @@
     "depends": ["base"],  # dependencies
     "data": [
         'security/ir.model.access.csv',
+        'views/test_model.xml',
+        'data/res.country.state.csv'
     ],
     "installable": True,
     'license': 'LGPL-3',

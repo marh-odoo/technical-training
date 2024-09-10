@@ -1,0 +1,44 @@
+<odoo>
+    <record id="test_model_action" model="ir.actions.act_window">
+        <field name="name">Test action</field>
+        <field name="res_model">test_model</field>
+        <field name="view_mode">tree,form</field>
+    </record>    
+    <!-- <menuitem id="test_model_menu_action" action="test_model_action"/> -->
+    <menuitem id="test_menu_root" name="Test 2">
+        <menuitem id="test_first_level_menu" name="First Level">
+            <menuitem id="test_model_menu_action" action="test_model_action"/>
+        </menuitem> 
+    </menuitem>
+
+
+
+    <record id="test_model_view_search" model="ir.ui.view">
+        <field name="name">test_model.view.search</field>
+        <field name="model">test_model</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <!-- <field name="last_seen"/> -->
+            </search>
+        </field>
+    </record>
+
+    <record id="test_model_view_form" model="ir.ui.view">
+        <field name="name">test_model.view.form</field>
+        <field name="model">test_model</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <!-- <field name="last_seen"/> -->
+                        <field name="partner_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
